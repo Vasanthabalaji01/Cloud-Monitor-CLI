@@ -41,10 +41,10 @@ To get started with Mini Cloud CLI, follow these steps:
     cd mini-cloud-cli
     ```
 
-3. **Run the Main Script**: Execute the `minicloudcli.sh` script to launch the main menu:
+3. **Run the Main Script**: Execute the `cloudcli.sh` script to launch the main menu:
 
     ```bash
-    ./minicloudcli.sh
+    ./cloudcli.sh
     ```
 
 4. **Choose Your Cloud Provider**: Select your desired cloud provider from the main menu options.
