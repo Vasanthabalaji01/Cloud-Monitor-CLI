@@ -6,7 +6,7 @@ echo "
  | |\/| | | ' \| | | (__| / _ \ || / _\` | | (__| |__ | | 
  |_|  |_|_|_||_|_|  \___|_\___/\_,_\__,_|  \___|____|___|
 "
-echo "Developed by Mr.CloudExplorer | Version 0.1"
+echo "Developed by Mr.CloudExplorer | Version 0.2"
 
 # Main Menu
 while true; do
