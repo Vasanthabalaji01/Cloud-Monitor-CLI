@@ -1,17 +1,13 @@
 #!/bin/bash
 
 # Banner Display
-echo ""
-echo "**************************************"
-echo "*    -------------------------       *"
-echo "*    |     Mini Cloud CLI    |       *"
-echo "*    -------------------------       *"
-echo "*                                    *"
-echo "*            Created by              *"
-echo "*       | Mr.CloudExplorer |         *"
-echo "*            Version 0.1             *"
-echo "**************************************"
-echo ""
+echo "
+  __  __ _      _    ___ _             _    ___ _    ___ 
+ |  \/  (_)_ _ (_)  / __| |___ _  _ __| |  / __| |  |_ _|
+ | |\/| | | ' \| | | (__| / _ \ || / _` | | (__| |__ | | 
+ |_|  |_|_|_||_|_|  \___|_\___/\_,_\__,_|  \___|____|___|
+
+Developed by Mr.CloudExplorer | Version 0.2 "
 
 # Main Menu
 while true; do
