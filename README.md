@@ -1,49 +1,71 @@
-# Cloud-Monitor-CLI
-The Cloud Monitor Command Line Interface (CLI) Tool is a terminal-based monitoring tool designed to perform simple and effective tasks for monitoring various cloud services.
+# Mini Cloud CLI
 
-# To Do: Cloud CLI Monitor Tool
-
-This repository will contain a command-line interface (CLI) tool for monitoring various cloud services. Below are the planned features and steps to be implemented.
+Mini Cloud CLI is a command-line interface tool designed to simplify the management of cloud services across multiple providers. With Mini Cloud CLI, you can interact with various cloud platforms such as AWS, Azure, and Google Cloud directly from your terminal, without the need for complex graphical interfaces or multiple login sessions.
 
 ## Features
 
-- [ ] Choose your cloud provider: Support for multiple cloud providers, including AWS, Azure, and Google Cloud Platform.
-- [ ] Provider-based authentication: Authenticate with your cloud provider using provider-specific authentication methods (e.g., AWS CLI profiles, Azure CLI login, Google Cloud SDK authentication).
-- [ ] Monitor a wide range of cloud services: Select from a list of supported cloud services and monitor key performance metrics and health indicators.
-- [ ] Display basic information for selected services: Get real-time insights into CPU utilization, memory usage, disk I/O, network traffic, and more for your cloud resources.
+- **Provider Selection**
+  
+  Choose your preferred cloud provider Cloud from the main menu
+    - AWS
+    - Azure
+    - Google 
+- **Service Management**
+  
+  Access specific services offered by each cloud provider, such as
+    - EC2, S3, and Lambda for AWS,
+    - Virtual Machines, Blob Storage, and Functions for Azure,
+    - Compute Engine, Cloud Storage, Load Balancing, and Cloud Functions for Google Cloud.
+      
+- **Command-Line Interface**
+  
+  Perform actions and configurations using familiar command-line syntax.
+  
+- **Modular Design**
+  
+  Each cloud provider's functionality is organized into separate scripts for easy maintenance and extensibility.
 
-## Installation
+## Getting Started
 
-- [ ] Clone this repository.
-- [ ] Navigate to the project directory.
-- [ ] Run the setup script to install dependencies.
+To get started with Mini Cloud CLI, follow these steps:
 
-## Usage
+1. **Clone the Repository**: Clone this repository to your local machine:
 
-- [ ] Choose your cloud provider.
-- [ ] List available services.
-- [ ] Get basic information for the selected service.
+    ```bash
+    git clone https://github.com/your-username/mini-cloud-cli.git
+    ```
 
-## Supported Cloud Providers
+2. **Navigate to the Directory**: Change into the directory of the cloned repository:
 
-- [ ] Amazon Web Services (AWS)
-- [ ] Microsoft Azure
-- [ ] Google Cloud Platform (GCP)
+    ```bash
+    cd mini-cloud-cli
+    ```
 
-## Supported Services
+3. **Run the Main Script**: Execute the `cloudcli.sh` script to launch the main menu:
 
-- [ ] **Compute Instances**: Monitor CPU utilization, memory usage, disk I/O, network traffic, and instance health.
-- [ ] **Storage Services**: Monitor storage usage, request rates, latency, and error rates.
-- [ ] **Databases**: Monitor database performance metrics such as CPU utilization, memory usage, disk I/O, query latency, and replication lag.
-- [ ] **Load Balancers**: Monitor request rates, latency, error rates, and backend server health.
-- [ ] **Containers and Container Orchestration**: Monitor container resource utilization, container health, orchestration service health, and container networking.
-- [ ] **Serverless Computing**: Monitor function invocations, execution duration, error rates, and resource consumption.
-- [ ] **Networking Services**: Monitor network traffic, latency, error rates, and VPN/ExpressRoute connectivity.
+    ```bash
+    ./cloudcli.sh
+    ```
+
+4. **Choose Your Cloud Provider**: Select your desired cloud provider from the main menu options.
+
+5. **Explore Services**: Navigate through the available services and execute commands as needed.
+
+## Prerequisites
+
+- Bash shell environment
+- Internet connectivity for initial setup and authentication with cloud providers
+- Proper credentials and permissions for accessing cloud services
 
 ## Contributing
 
-- [ ] Contributions are welcome! Please fork this repository and submit a pull request with your enhancements or bug fixes.
+Contributions are welcome! If you have any ideas for new features, improvements, or bug fixes, please open an issue or submit a pull request.
 
 ## License
 
-- [ ] This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+- This project was inspired by the need for a lightweight and versatile tool to manage cloud services from the command line.
+- Special thanks to [Mr.CloudExplorer](https://github.com/mrcloudexplorer).
