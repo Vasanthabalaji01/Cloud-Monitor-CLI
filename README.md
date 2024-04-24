@@ -2,7 +2,7 @@
 
 Mini Cloud CLI is a command-line interface tool designed to simplify the management of cloud services across multiple providers. With Mini Cloud CLI, you can interact with various cloud platforms such as AWS, Azure, and Google Cloud directly from your terminal, without the need for complex graphical interfaces or multiple login sessions.
 
-![Tool](interface.png)
+![Tool](snap/Interface.png)
 
 ## Features
 
