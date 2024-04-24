@@ -68,5 +68,4 @@ This project is licensed under the [MIT License](LICENSE).
 ## Acknowledgments
 
 - This project was inspired by the need for a lightweight and versatile tool to manage cloud services from the command line.
-- Special thanks to [learn to cloud](https://github.com/learntocloud) 
 - Developed by [Mr.CloudExplorer](https://github.com/Vasanthabalaji01).
