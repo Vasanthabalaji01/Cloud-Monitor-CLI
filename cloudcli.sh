@@ -5,19 +5,21 @@ echo "
  |  \/  (_)_ _ (_)  / __| |___ _  _ __| |  / __| |  |_ _|
  | |\/| | | ' \| | | (__| / _ \ || / _\` | | (__| |__ | | 
  |_|  |_|_|_||_|_|  \___|_\___/\_,_\__,_|  \___|____|___|
+
+ Developed by Mr.CloudExplorer | Version 0.2
 "
-echo "Developed by Mr.CloudExplorer | Version 0.2"
+echo ""
 
 # Main Menu
 while true; do
-    echo "Choose a cloud provider:"
-    echo "1. AWS"
-    echo "2. Azure"
-    echo "3. Google Cloud"
-    echo "4. Exit"
-    read -p "Enter your choice (1-4): " choice
+    echo "Select Cloud provider"
+    echo "a. AWS"
+    echo "az. Azure"
+    echo "gc. Google Cloud"
+    echo "e. Exit"
+    read -p "Cloud Provider: " choice
     case "$choice" in
-        1)
+        a)
             # Function to install and configure AWS CLI
             install_configure_aws_cli() {
                 # Step 1: Install AWS CLI
@@ -38,13 +40,13 @@ while true; do
             # Function to handle AWS EC2 commands
             aws_ec2_commands() {
                 while true; do
-                    echo "AWS EC2 Menu:"
+                    echo "AWS EC2"
                     echo "1. Describe Instances"
                     echo "2. Start Instance"
                     echo "3. Stop Instance"
                     echo "4. Create Instance"
-                    echo "5. Back to Main Menu"
-                    read -p "Enter your choice (1-5): " choice
+                    echo "5. Back"
+                    read -p "action in ec2:  " choice
                     case "$choice" in
                         1)
                             aws ec2 describe-instances
@@ -75,12 +77,12 @@ while true; do
             # Function to handle AWS S3 commands
             aws_s3_commands() {
                 while true; do
-                    echo "AWS S3 Menu:"
+                    echo "AWS S3"
                     echo "1. List Buckets"
                     echo "2. Create Bucket"
                     echo "3. Upload File"
-                    echo "4. Back to Main Menu"
-                    read -p "Enter your choice (1-4): " choice
+                    echo "4. Back"
+                    read -p "action in S3: " choice
                     case "$choice" in
                         1)
                             aws s3 ls
@@ -108,12 +110,12 @@ while true; do
             # Function to handle AWS Lambda commands
             aws_lambda_commands() {
                 while true; do
-                    echo "AWS Lambda Menu:"
+                    echo "AWS Lambda"
                     echo "1. List Functions"
                     echo "2. Invoke Function"
                     echo "3. Create Function"
-                    echo "4. Back to Main Menu"
-                    read -p "Enter your choice (1-4): " choice
+                    echo "4. Back"
+                    read -p "action in Lambda: " choice
                     case "$choice" in
                         1)
                             aws lambda list-functions
@@ -140,12 +142,18 @@ while true; do
             # Function to handle AWS CLI commands
             aws_service_menu() {
                 while true; do
-                    echo "AWS Service Menu:"
+                    echo "
+                        ___      _____ 
+                       /_\ \    / / __|
+                      / _ \ \/\/ /\__ \
+                     /_/ \_\_/\_/ |___/
+                     "
+                    echo ""
                     echo "1. EC2"
                     echo "2. S3"
                     echo "3. Lambda"
-                    echo "4. Back to Main Menu"
-                    read -p "Enter your choice (1-4): " choice
+                    echo "4. Back"
+                    read -p "AWS Services: " choice
                     case "$choice" in
                         1)
                             aws_ec2_commands
@@ -170,7 +178,7 @@ while true; do
             # Call the AWS service menu function
             aws_service_menu
             ;;
-        2)
+        az)
             # Function to install and configure Azure CLI
             install_configure_azure_cli() {
                 # Step 1: Install prerequisites
@@ -208,13 +216,13 @@ while true; do
             # Function to handle Azure Virtual Machines commands
             azure_vm_commands() {
                 while true; do
-                    echo "Azure Virtual Machines Menu:"
+                    echo "Azure Virtual Machines:"
                     echo "1. List Virtual Machines"
                     echo "2. Start Virtual Machine"
                     echo "3. Stop Virtual Machine"
                     echo "4. Create Virtual Machine"
-                    echo "5. Back to Main Menu"
-                    read -p "Enter your choice (1-5): " choice
+                    echo "5. Back"
+                    read -p "action in VM: " choice
                     case "$choice" in
                         1)
                             az vm list
@@ -247,12 +255,12 @@ while true; do
             # Function to handle Azure Blob Storage commands
             azure_blob_commands() {
                 while true; do
-                    echo "Azure Blob Storage Menu:"
+                    echo "Azure Blob Storage:"
                     echo "1. List Containers"
                     echo "2. Create Container"
                     echo "3. Upload File"
-                    echo "4. Back to Main Menu"
-                    read -p "Enter your choice (1-4): " choice
+                    echo "4. Back"
+                    read -p "action in Blob Storage: " choice
                     case "$choice" in
                         1)
                             az storage container list
@@ -280,12 +288,12 @@ while true; do
             # Function to handle Azure Functions commands
             azure_functions_commands() {
                 while true; do
-                    echo "Azure Functions Menu:"
+                    echo "Azure Functions:"
                     echo "1. List Functions"
                     echo "2. Invoke Function"
                     echo "3. Create Function"
-                    echo "4. Back to Main Menu"
-                    read -p "Enter your choice (1-4): " choice
+                    echo "4. Back"
+                    read -p "action in functions: " choice
                     case "$choice" in
                         1)
                             az functionapp list
@@ -313,12 +321,18 @@ while true; do
             # Function to handle Azure CLI commands
             azure_service_menu() {
                 while true; do
-                    echo "Azure Service Menu:"
+                    echo "
+                        _    _____   _ ___ ___ 
+                       /_\  |_  / | | | _ \ __|
+                      / _ \  / /| |_| |   / _| 
+                     /_/ \_\/___|\___/|_|_\___|
+                     "
+                    echo ""
                     echo "1. Virtual Machines"
                     echo "2. Blob Storage"
                     echo "3. Functions"
-                    echo "4. Back to Main Menu"
-                    read -p "Enter your choice (1-4): " choice
+                    echo "4. Back"
+                    read -p "Azure Service: " choice
                     case "$choice" in
                         1)
                             azure_vm_commands
@@ -343,7 +357,7 @@ while true; do
             # Call the Azure service menu function
             azure_service_menu
             ;;
-        3)
+        gc)
             # Function to install and configure Google Cloud SDK
             install_configure_gcloud_sdk() {
                 # Step 1: Download and install the Google Cloud SDK
@@ -374,13 +388,13 @@ while true; do
             # Function to handle Google Compute Engine (GCE) commands
             gce_commands() {
                 while true; do
-                    echo "Google Compute Engine (GCE) Menu:"
+                    echo "Google Compute Engine"
                     echo "1. List Instances"
                     echo "2. Start Instance"
                     echo "3. Stop Instance"
                     echo "4. Create Instance"
-                    echo "5. Back to Main Menu"
-                    read -p "Enter your choice (1-5): " choice
+                    echo "5. Back"
+                    read -p "action in GCE: " choice
                     case "$choice" in
                         1)
                             gcloud compute instances list
@@ -411,12 +425,12 @@ while true; do
             # Function to handle Google Cloud Storage (GCS) commands
             gcs_commands() {
                 while true; do
-                    echo "Google Cloud Storage (GCS) Menu:"
+                    echo "Google Cloud Storage"
                     echo "1. List Buckets"
                     echo "2. Create Bucket"
                     echo "3. Upload File"
-                    echo "4. Back to Main Menu"
-                    read -p "Enter your choice (1-4): " choice
+                    echo "4. Back"
+                    read -p "action in GCS: " choice
                     case "$choice" in
                         1)
                             gsutil ls
@@ -444,11 +458,11 @@ while true; do
             # Function to handle Google Cloud Load Balancing (GCLB) commands
             gclb_commands() {
                 while true; do
-                    echo "Google Cloud Load Balancing (GCLB) Menu:"
+                    echo "Google Cloud Load Balancing:"
                     echo "1. List Load Balancers"
                     echo "2. Create Load Balancer"
-                    echo "3. Back to Main Menu"
-                    read -p "Enter your choice (1-3): " choice
+                    echo "3. Back"
+                    read -p "action in GCLB: " choice
                     case "$choice" in
                         1)
                             gcloud compute backend-services list
@@ -471,12 +485,12 @@ while true; do
             # Function to handle Google Cloud Functions (GCF) commands
             gcf_commands() {
                 while true; do
-                    echo "Google Cloud Functions (GCF) Menu:"
+                    echo "Google Cloud Functions"
                     echo "1. List Functions"
                     echo "2. Invoke Function"
                     echo "3. Create Function"
-                    echo "4. Back to Main Menu"
-                    read -p "Enter your choice (1-4): " choice
+                    echo "4. Back"
+                    read -p "action in gcf: " choice
                     case "$choice" in
                         1)
                             gcloud functions list
@@ -504,13 +518,19 @@ while true; do
             # Function to handle Google Cloud Platform (GCP) commands
             gcp_service_menu() {
                 while true; do
-                    echo "Google Cloud Platform (GCP) Menu:"
-                    echo "1. Compute Engine (GCE)"
-                    echo "2. Cloud Storage (GCS)"
-                    echo "3. Load Balancing (GCLB)"
-                    echo "4. Cloud Functions (GCF)"
-                    echo "5. Back to Main Menu"
-                    read -p "Enter your choice (1-5): " choice
+                    echo "
+                       ___  ___ ___ 
+                      / __|/ __| _ \
+                     | (_ | (__|  _/
+                      \___|\___|_| 
+                      "
+                    echo ""
+                    echo "1. Compute Engine"
+                    echo "2. Cloud Storage"
+                    echo "3. Load Balancing"
+                    echo "4. Cloud Functions"
+                    echo "5. Back"
+                    read -p "action in GCP: " choice
                     case "$choice" in
                         1)
                             gce_commands
@@ -538,7 +558,7 @@ while true; do
             # Call the Google Cloud Platform (GCP) service menu function
             gcp_service_menu
             ;;
-        4)
+        e)
             # Exit
             echo "Exiting Mini Cloud CLI. Goodbye!"
             exit 0
