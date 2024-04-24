@@ -23,31 +23,16 @@ while true; do
     read -p "Enter your choice (1-4): " choice
     case "$choice" in
         1)
-            # AWS
-            # Installation and configuration steps
-            echo "Installing and configuring AWS CLI..."
-            # Insert installation and configuration commands here
-            echo "AWS CLI installed and configured successfully."
             # Proceed to service menu
-            ./aws_service_menu.sh
+            ./aws.sh
             ;;
         2)
-            # Azure
-            # Installation and configuration steps
-            echo "Installing and configuring Azure CLI..."
-            # Insert installation and configuration commands here
-            echo "Azure CLI installed and configured successfully."
             # Proceed to service menu
-            ./azure_service_menu.sh
+            ./azure.sh
             ;;
         3)
-            # Google Cloud
-            # Installation and configuration steps
-            echo "Installing and configuring Google Cloud CLI..."
-            # Insert installation and configuration commands here
-            echo "Google Cloud CLI installed and configured successfully."
             # Proceed to service menu
-            ./gcp_service_menu.sh
+            ./gcp.sh
             ;;
         4)
             # Exit
