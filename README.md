@@ -57,6 +57,18 @@ To get started with Mini Cloud CLI, follow these steps:
 - Internet connectivity for initial setup and authentication with cloud providers
 - Proper credentials and permissions for accessing cloud services
 
+## Version
+
+- Version 0.1
+  - minicloudcli.sh
+  - aws.sh
+  - azure.sh
+  - gcp.sh
+
+- Version 0.2
+  - cloudcli.sh
+
+
 ## Contributing
 
 Contributions are welcome! If you have any ideas for new features, improvements, or bug fixes, please open an issue or submit a pull request.
